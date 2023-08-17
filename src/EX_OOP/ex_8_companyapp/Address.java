@@ -14,10 +14,12 @@ public class Address {
     }
 
     public String getCity() {
+
         return city;
     }
 
     public void setCity(String city) {
+
         this.city = city;
     }
 
@@ -30,10 +32,12 @@ public class Address {
     }
 
     public int getNumber() {
+
         return number;
     }
 
     public void setNumber(int number) {
+
         this.number = number;
     }
 }

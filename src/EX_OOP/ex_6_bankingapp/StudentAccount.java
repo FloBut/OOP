@@ -11,22 +11,24 @@ public class StudentAccount extends BankAccount {
     }
 
     @Override
-    public int withdraw(int amount) {
+    public int withdraw(int amount) throws OperationNotSupportedException {
         //daca balanta contului e mai mare decat suma mea, retrag banii
-        if (getBalance() >= amount){
-            setBalance(getBalance() - amount);
+        if (getBalance() < amount){
+            throw new OperationNotSupportedException("ÿou cannot withdraw more than you have form a student account");
         }
+        setBalance(getBalance() - amount);
         return getBalance();
     }
 
     @Override
-    public int deposit(int amount) {
+    public int deposit(int amount) throws OperationNotSupportedException {
         //daca amount-ul este mai mic decat maxDeposit
         //atunci depun suma
         //returnez balanta curenta
-       if (amount <= maxDepositAmount){
-           setBalance(getBalance() + amount);
+       if (amount > maxDepositAmount){
+           throw new OperationNotSupportedException("ÿou cannot deposit more than "+ maxDepositAmount);
        }
+        setBalance(getBalance() + amount);
        return getBalance();
     }
 

@@ -1,4 +1,4 @@
-package EX_OOP.ex_7.ghiozdan;
+package EX_OOP.ex_7_ghiozdan.ghiozdan;
 // Clasa Book va avea atributele:
 //* title
 //* numberOfPages

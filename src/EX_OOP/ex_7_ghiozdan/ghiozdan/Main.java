@@ -1,4 +1,4 @@
-package EX_OOP.ex_7.ghiozdan;
+package EX_OOP.ex_7_ghiozdan.ghiozdan;
 
 public class Main {
     public static void main(String[] args) {

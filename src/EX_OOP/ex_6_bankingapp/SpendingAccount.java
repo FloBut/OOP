@@ -9,16 +9,16 @@ public class SpendingAccount extends BankAccount {
     }
 
     @Override
-    public int withdraw(int amount) {
-        if (amount <= maxwithdrawlAmount + getBalance()) {
-            setBalance(getBalance() - amount);
+    public int withdraw(int amount) throws OperationNotSupportedException {
+        if (amount > maxwithdrawlAmount + getBalance()) {
+            throw new OperationNotSupportedException("nu poti retrage mai mult decat " + maxwithdrawlAmount + " plus " + getBalance());
         }
+        setBalance(getBalance() - amount);
         return getBalance();
     }
 
     @Override
     public int deposit(int amount) {
-        //la balanta spending account-ului curent adaugam amount-ul primit ca parametru
         setBalance(getBalance() + amount);
         return getBalance();
     }
@@ -27,8 +27,8 @@ public class SpendingAccount extends BankAccount {
     public String toString() {
         return "SpendingAccount{" +
                 "maxwithdrawlAmount=" + maxwithdrawlAmount +
-                "balance="+ getBalance() +
-                "äccountnumber=" + getAccountNumber() +
+                "balance=" + getBalance() +
+                "accountNumber=" + getAccountNumber() +
                 '}';
     }
 }

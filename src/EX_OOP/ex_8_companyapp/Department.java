@@ -49,4 +49,13 @@ public class Department {
             System.out.println(employees[i].getAddress().getStreet());
         }
     }
+
+    public Employee getEmployeeByName(String employeeName){
+        for (int i = 0; i < numberOfEmployeesAdded; i++) {
+            if (employeeName.equals(employees[i].getName())){
+                return employees[i];
+            }
+        }
+        return null;
+    }
 }

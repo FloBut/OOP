@@ -12,34 +12,42 @@ public class Client {
         accounts = new BankAccount[20];
         numberOfAccountsAdded = 0;
     }
+    public Client(){}
 
 
 
     public String getFirstName() {
+
         return firstName;
     }
 
     public void setFirstName(String firstName) {
+
         this.firstName = firstName;
     }
 
     public String getLastName() {
+
         return lastName;
     }
 
     public void setLastName(String lastName) {
+
         this.lastName = lastName;
     }
 
     public BankAccount[] getAccounts() {
+
         return accounts;
     }
 
     public void setAccounts(BankAccount[] accounts) {
+
         this.accounts = accounts;
     }
 
     public int getNumberOfAccountsAdded() {
+
         return numberOfAccountsAdded;
     }
 
@@ -48,27 +56,24 @@ public class Client {
     }
 
     public boolean addAccount(BankAccount account) {
-        accounts[numberOfAccountsAdded] = account;
-        numberOfAccountsAdded++;
+        accounts[numberOfAccountsAdded++] = account;
         return true;
     }
     public void listAccounts() {
-        for (int i = 0; i< numberOfAccountsAdded; i++){
+        for (int i = 0; i < numberOfAccountsAdded; i++){
             System.out.println(accounts[i]);
         }
     }
-    public int deposit(int amount, String accountNumber){
+    public int deposit(int amount, String accountNumber) throws OperationNotSupportedException {
         //gasesc contul cu numarul accountNumber
         // in acel cont depozitez
         BankAccount account = findAccount(accountNumber);
-
-
         if (account == null){
             return Integer.MIN_VALUE;
         }
         return account.deposit(amount);
     }
-    public int withdraw(int amount, String accountNumber) {
+    public int withdraw(int amount, String accountNumber) throws OperationNotSupportedException {
         // caut in lista de conturi numarul contului din care vreau sa scot bani
         //gasesc contul si scot banii
         BankAccount account = findAccount(accountNumber);
@@ -93,7 +98,7 @@ public class Client {
             //verificam daca numarul primit ca parametru este egal cu numele contului curent din parcurgere
             //daca da, returnam contul curent din parcurgere
         //returnam null
-        for (int i = 0; i< numberOfAccountsAdded; i++){
+        for (int i = 0; i < numberOfAccountsAdded; i++){
             if (accountNumber.equals(accounts[i].getAccountNumber())){
                 return accounts[i];
             }
