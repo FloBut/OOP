@@ -13,6 +13,8 @@ public class Adressapp {
         Employee employee4 = new Employee("Ïonica", "Costel", 10000, address4);
         Employee[] secondDepEmpList = {employee3, employee4};
 
+        employee4.getAdreesStreet();
+
        // System.out.println(employee1.getName());
        // System.out.println(employee1.getAdreesStreet());
 
