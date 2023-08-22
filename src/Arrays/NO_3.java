@@ -11,11 +11,9 @@ public class NO_3 {
         String s = scanner.next();
         eachLetter(s);
     }
-
     public static void eachLetter(String s) {
-        char c;
         for (int i = 0; i < s.length(); ++i) {
-            System.out.println(c = s.charAt(i));
+            System.out.println(s.charAt(i));
         }
 
     }

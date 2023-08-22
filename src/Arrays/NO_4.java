@@ -13,7 +13,7 @@ public class NO_4 {
     public static String[] bToLion(String[] animals) {
         String animal = "Lion";
         for (int i = 0; i < animals.length; i++) {
-            if (animals[i].toString().charAt(0) == 'B') {
+            if (animals[i].charAt(0) == 'B') {
                 animals[i] = animal;
             }
         }
