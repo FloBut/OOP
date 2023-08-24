@@ -1,4 +1,4 @@
-package Arrays;
+package Strings;
 //### 10. Scrie un program care printeaza in consola daca un String are caracterele in ordine alfabetica, sau nu.
 //
 //HINT: atunci cand compari 2 caractere folosind operatorul "<", afli daca ele sunt in ordinea alfabetica.\

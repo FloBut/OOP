@@ -1,4 +1,4 @@
-package Arrays;
+package Strings;
 // ### 2. Scrie un program care sa concateneze doua String-uri, mai putin primul caracter din fiecare
 //
 //Pentru  "Java" si "Fundamentals", se va afisa in consola "avaundamentals".

@@ -1,4 +1,4 @@
-package Arrays;
+package Strings;
 //### 7.Scrie un program care sa afiseze in consola daca un cuvant este palindrom sau nu.
 //
 //Un cuvant sau numar este palindrom daca este egal cu inversul lui\
@@ -7,7 +7,6 @@ package Arrays;
 
 
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class NO_7 {

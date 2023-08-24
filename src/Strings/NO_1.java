@@ -1,6 +1,5 @@
-package Arrays;
+package Strings;
 
-import java.awt.*;
 import java.util.Scanner;
 
 //### 1. Scrie un program care sa extraga prima jumatate a unui String de lungime para

@@ -1,6 +1,5 @@
-package Arrays;
+package Strings;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 //6. Scrie un program care citeste de la tastatura un String si ii inverseaza caracterele.
