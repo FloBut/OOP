@@ -1,5 +1,12 @@
 package EX_OOP.ex_6_bankingapp;
-
+//Clasa StudentAccount (extinde BankAccount)
+//Atribute:
+//
+//maxDepositAmount - va trebui să nu își schimbe valoarea o dată ce a fost inițializată
+//Metode:
+//
+//Metoda withdraw() - se pot retrage maxim câți bani sunt în cont în momentul retragerii
+//Metoda deposit() - se pot depune maxim “maxDepositAmount” bani o dată
 import com.sun.tools.attach.AgentInitializationException;
 
 public class StudentAccount extends BankAccount {

@@ -1,12 +1,14 @@
-package EX_OOP.ex_Principii_OOP;
+package EX_OOP.ex_Principii_OOP.Player;
 
 public class Game {
     public static void main(String[] args) {
-//        PlayerCharacter playerCharacter = new PlayerCharacter();
-//        playerCharacter.speak();
-//        System.out.println(playerCharacter.getName());
-//        playerCharacter.setAge(34);
-//        System.out.println(playerCharacter.getAge());
+/*
+      PlayerCharacter playerCharacter = new PlayerCharacter(); //nu pot face un obiect dintr - o clasa abstracat
+        playerCharacter.speak();// ci doar arcas sau vrajitor
+        System.out.println(playerCharacter.getName());//
+        playerCharacter.setAge(34);
+        System.out.println(playerCharacter.getAge());
+*/
         Archer archer = new Archer("John", 25, 50);
         System.out.println(archer.getName());
         System.out.println(archer instanceof PlayerCharacter);

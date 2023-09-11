@@ -1,4 +1,4 @@
-package EX_OOP.ex_Principii_OOP;
+package EX_OOP.ex_Principii_OOP.Player;
 
 public class Wizard extends PlayerCharacter {
     private int power;
@@ -9,9 +9,11 @@ public class Wizard extends PlayerCharacter {
     }
 
     public int getPower() {
+
         return power;
     }
     public void setPower(int power) {
+
         this.power = power;
     }
     public void attack () {

@@ -14,20 +14,40 @@ package EX_OOP.ex_7_ghiozdan.ghiozdan;
 //* getCurrentBooks() - va returna lista de carti care sunt in ghiozdan
 //* addBook() - va adauga o carte in ghiozdan, daca adaugarea ei nu depaseste greutatea maxima
 public class Book {
-    String Title;
+    String title;
     int numberOfPages;
     int weight;
 
     public Book(String title, int numberOfPages, int weight) {
-        this.Title = title;
+        this.title = title;
         this.numberOfPages = numberOfPages;
+        this.weight = weight;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getNumberOfPages() {
+        return numberOfPages;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setNumberOfPages(int numberOfPages) {
+        this.numberOfPages = numberOfPages;
+    }
+
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 
     @Override
     public String toString() {
         return "Book{" +
-                "Title='" + Title + '\'' +
+                "title='" + title + '\'' +
                 ", numberOfPages=" + numberOfPages +
                 ", weight=" + weight +
                 '}';

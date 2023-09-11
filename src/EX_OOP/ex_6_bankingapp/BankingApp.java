@@ -1,7 +1,6 @@
 package EX_OOP.ex_6_bankingapp;
-
-import fitnessApp.Product;
-
+//Clasa BankingApp
+//Clasa va avea doar metoda main(), unde se va instanția o persoană și se vor testa metodele pe care le poate face persoana (adăugare cont, deposit, etc.).
 public class BankingApp {
     public static void main(String[] args)  {
         Client client = new Client("Ionica", "Gergel");

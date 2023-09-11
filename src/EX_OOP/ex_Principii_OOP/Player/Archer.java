@@ -1,4 +1,4 @@
-package EX_OOP.ex_Principii_OOP;
+package EX_OOP.ex_Principii_OOP.Player;
 
 public class Archer extends PlayerCharacter {
     private int numberOfArrows;
